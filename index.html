@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html class="no-js" lang="en">
+	<head> 
+ 		<meta charset="utf-8"> 
+ 		<meta name='viewport' content="width=device-width" />
+ 		<title> Shiningg On You crazy Diamond </title>
+        <link rel="stylesheet" href="stylesheets/foundation.css">
+         <link rel="stylesheet" href="stylesheets/app.css">
+         
+           <script src="javascripts/modernizr.foundation.js"></script>
+	
+	</head>
+	
+	<!-- Header and Nav --> 
+	
+	<div class="row">
+		<div class="twelve columns">
+			<div class="panel"> 
+			  <h1> QuoteQ </h1>
+			</div>
+		</div>
+	</div> 
+	<!-- End of Header and NAv --> 
+	
+	<div class="row">
+		<!-- Nav sidebar --> 
+		<div class="three columns"> 
+				<div class="panel"> 
+				<h5> Menu </h5>
+				<a data-reveal-id="add-quote" class="success button"> Epic Shit Coming - Just Add </a>
+	 			</div>
+	 	</div>
+	</div>
+	
+	<!-- End of Nav sidebar --> 
+	<div class="nine columns"> 
+	<h2> Newest Quotes </h2>
+	<br /> 
+	<div id="quoteList" class="row">
+		<!-- Feed Entry -->
+
+		
+		
+	</div></div>
+	
+	<!-- Add a quote Dialogue --> 
+	<div id="add-quote" class="reveal-modal large"> 
+			<h2> add some epic shit </h2>
+			<form id="newQuote">
+				<label for="quoteText"> Quote: </label>
+				<textarea id="quoteText"></textarea>
+				
+				<label for="attribution"> By: </label>
+				<input type="text" id="attribution" />
+				
+				<input class="button" type="submit" /> 
+			</form>
+	</div>
+	 
+	 <!-- Single Quote Template --> 
+	 <script type="text/x-handlebars-template" id="single-quote-template">
+	 	
+	 			
+		<div class="row singleQuote"> 
+		<div class="eleven columns centered"> 
+		<p> {{quoteText}} &mdash; <strong> {{by}} </strong> </p>
+		
+		</div></div>
+		
+	 </script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+     <script src="javascripts/handlebars.js"></script>
+     <script src="javascripts/foundation.min.js"></script>
+     <script src="//www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+     
+     <script> 
+     Parse.initialize("4EHgDi5pZ9U9isRbBCFjXlxVsfMxfIZkmppzLoaT", "FCbtVUDFAE28zrv21W8i3LokpMoipnCgzDU4VFf5");
+     </script>
+      <script src="javascripts/app.js"></script>
+
+
+
+</html>
